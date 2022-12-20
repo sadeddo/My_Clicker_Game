@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>My_Clicker_Game</title>
+            <link rel="stylesheet" href="style.css">
+            <script src="index.js"></script>
+            <audio src=""></audio>
+        </head>
+        <header>
+
+                <img src="img/nba.png" alt="logo" width="49px" height="134px">
+                <h2 class="titre">NBA Click</h2>
+        </header>
+        <body class="body">
+            
+            <div class="block">
+                <fieldset class="pps">
+                <h1 id="gps" class="ggps">0</h1>
+                <p class="gps">panier par seconds</p>
+                </fieldset>
+                <div class="ballscore">
+                    <!--<img src="img/panneau.png" alt="paneau" width="160px" height="270px" class="panneau">-->
+                    <fieldset class="panneau">
+                    <h1 id="gold" class="points">0</h1><p class="pts">PTS</p>
+                    </fieldset>
+                    <button onclick="save()">save</button>
+                    <button onclick="load()">load</button>
+                    <section id="gold"></section>
+                    <img src="img/ballon_basket.gif" onclick="addGold(m)" width="150px">
+                </div>
+                <!--nous avons penser a faire un foreach pour l'affichage de chaque joueur mais les images des joueurs allaient se deformer-->
+                <!--il fallait simplement ajouter l'image dans le var players dans le js et l'appeller dans le html avec l'id-->
+                        <div class="prs">
+                                    <div class="perso">
+                                        <img id = "cost"src="img/SC.gif" onclick="buyPlayer(0)" width="104px" height="104px">
+                                        
+                                        <div class="chiffres">
+                                            <h1 class="name">Stephen CURRY</h1><br>
+                                            <div class="chiffre"><p>Cost</p><span id="playercost_0">10</span></div><br>
+                                            <div class="chiffre"><p>owned</p><span id="playerowned_0">0</span></div><br>
+                                            <div class="chiffre"><p>gps</p><span id="gpsSC">0,1</span></div><br>
+                                        </div>
+                                    </div>
+                                    <div class="perso">
+                                        <img id="cost" src="img/kobe.gif"  onclick="buyPlayer(1)" width="120px" height="100px">
+                                        
+                                        <div class="chiffres">
+                                            <h1 class="name">Kobe BRYANT</h1>
+                                            <div class="chiffre"><p>Cost</p><span id="playercost_1">50</span></div><br>
+                                            <div class="chiffre"><p>owned</p><span id="playerowned_1">0</span></div><br>
+                                            <div class="chiffre"><p>gps</p><span id="gpsKB">1</span></div><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="perso">
+                                        <img id ="cost"src="img/LBJ.gif" onclick="buyPlayer(2)" width="102px" height="125px">
+                                        
+                                        <div class="chiffres">
+                                            <h1 class="name">Lebron JAMES</h1><br>
+                                            <div class="chiffre"><p>Cost</p><span id="playercost_2">250</span></div><br>
+                                            <div class="chiffre"><p>owned</p><span id="playerowned_2">0</span></div><br>
+                                            <div class="chiffre"><p>gps</p><span id="gpsLBJ">2</span></div><br>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="perso">
+                                        <img id = "cost"src="img/JORDAN.gif" onclick="buyPlayer(3)" width="104px" height="104px">
+                                        
+                                        <div class="chiffres">
+                                            <h1 class="name">Michael JORDAN</h1><br>
+                                            <div class="chiffre"><p>Cost</p><span id="playercost_3">2000</span></div><br>
+                                            <div class="chiffre"><p>owned</p><span id="playerowned_3">0</span></div><br>
+                                            <div class="chiffre"><p>gps</p><span id="gpsMJ">4</span></div><br>
+                                        </div>
+                                    </div>
+                                    <div class="perso">
+                                        <img id = "cost"src="img/NBA.gif" onclick="buyPlayer(4)" width="104px" height="104px">
+                                        
+                                        <div class="chiffres">
+                                            <h1 class="name"></h1>NBA TROPHY<br>
+                                            <div class="chiffre"><p>Cost</p><span id="playercost_4">5000</span></div><br>
+                                            <div class="chiffre"><p>owned</p><span id="playerowned_4">0</span></div><br>
+                                            <div class="chiffre"><p>gps</p><span id="gpsNBA">10</span></div><br>
+                                        </div>
+                                    </div>
+                                    
+                        </div>
+            </div>
+                        
+                        
+        </body>
+    </html>
